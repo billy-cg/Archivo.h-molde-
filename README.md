@@ -26,8 +26,8 @@ Evitar std::string, punteros, contenedores STL y métodos virtuales
 USO BASICO
 
 
-#include "Archivo.h"
 
+#include "Archivo.h"
 Archivo<MiClase> arch("datos.dat");
 
 arch.guardar(obj);
@@ -43,14 +43,12 @@ EJEMPLO DE TIPO COMPATIBLE
 struct Cliente {
     int id;
     char nombre[40];
-
     Cliente() : id(0) {}
-
     int getID() const { return id; }
-
     void mostrar() const {
         cout << id << " - " << nombre << endl;
     }
 };
+
 
 
